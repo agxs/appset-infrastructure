@@ -1,0 +1,31 @@
+kube-prometheus-stack:
+  prometheus:
+    ingress:
+      hosts:
+        - monitoring.domain
+      tls:
+        - secretName: monitoring.domain-tls
+          hosts:
+            - monitoring.domain
+    prometheusSpec:
+      externalUrl: https://monitoring.domain/prometheus
+
+  alertmanager:
+    ingress:
+      hosts:
+        - monitoring.domain
+      tls:
+        - secretName: monitoring.domain-tls
+          hosts:
+            - monitoring.domain
+    alertmanagerSpec:
+      externalUrl: https://monitoring.domain/alertmanager
+
+  grafana:
+    ingress:
+      hosts:
+        - monitoring.domain
+      tls:
+        - secretName: monitoring.domain-tls
+          hosts:
+            - monitoring.domain

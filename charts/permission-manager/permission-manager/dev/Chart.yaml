@@ -1,0 +1,7 @@
+apiVersion: v2
+name: permission-manager
+version: 1.0.0
+dependencies:
+  - repository: https://sighupio.github.io/permission-manager
+    name: permission-manager
+    version: 0.1.0

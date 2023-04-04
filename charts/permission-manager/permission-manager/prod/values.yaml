@@ -1,0 +1,7 @@
+permission-manager:
+  image:
+    tag: v1.8.0
+  config:
+    clusterName: cluster-name
+    controlPlaneAddress: https://cluster.domain:8443
+    basicAuthPassword: someauthpw
